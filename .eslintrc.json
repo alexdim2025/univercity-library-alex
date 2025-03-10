@@ -1,0 +1,19 @@
+{
+   "root": true,
+   "env": {
+     "browser": true,
+     "node": true,
+     "es2021": true
+   },
+   "parser": "@typescript-eslint/parser",
+   "plugins": ["@typescript-eslint"],
+   "extends": [
+     "eslint:recommended",
+     "plugin:@typescript-eslint/recommended",
+     "next/core-web-vitals" // For Next.js-specific rules
+   ],
+   "rules": {
+     // Customize rules here (e.g., disable a rule)
+     "@typescript-eslint/no-unused-vars": "warn"
+   }
+ }
