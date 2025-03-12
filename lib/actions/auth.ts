@@ -8,6 +8,7 @@ import { headers } from "next/headers";
 import ratelimit from "@/lib/ratelimit";
 import { redirect } from "next/navigation";
 import { workflowClient } from "../workflow";
+import config from "@/lib/config";
 
 export const signUp = async (params: AuthCredentials) => { 
    const { fullName, email, password, universityId, universityCard } = params;
@@ -40,11 +41,10 @@ export const signUp = async (params: AuthCredentials) => {
       });
 
       await workflowClient.trigger({
-         url: `$(config.env.prodApiEndpoint)/api/workflows/onboarding`,
-         //method: "POST",
+         url: `${config.env.prodApiEndpoint}/api/workflows/onboarding`,
          body: {
-            email,
-            fullName,
+           email,
+           fullName,
          },
       });
 
