@@ -24,10 +24,10 @@ const Layout = async ({ children } : {children: ReactNode}) => {
       
       if(user[0].lastActivityDate === new Date().toISOString().slice(0, 10)) return;   
       
-      await db.update(users).set({
-         lastActivityDate: new Date().toISOString().slice(0, 10) // date without time hm
-         .where(eq(users.id, session?.user?.id))
-      });
+      await db
+      .update(users)
+      .set({ lastActivityDate: new Date().toISOString().slice(0, 10) })
+      .where(eq(users.id, session?.user?.id));
    });
 
   return (

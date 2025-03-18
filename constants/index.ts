@@ -53,9 +53,11 @@ export const navigationLinks = [
    email: "email",
    universityId: "number",
    password: "password",
- };
+};
  
- export const sampleBooks = [
+export const sampleBooks = [];
+ 
+export const sampleBooksOld = [
    {
      id: 1,
      title: "The Midnight Library",

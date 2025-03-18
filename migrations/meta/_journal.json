@@ -8,6 +8,20 @@
       "when": 1741363575699,
       "tag": "0000_modern_lake",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1741958493562,
+      "tag": "0001_wakeful_sheva_callister",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1742294316472,
+      "tag": "0002_cold_mordo",
+      "breakpoints": true
     }
   ]
 }
